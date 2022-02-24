@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+    <!-- Card -->
+<div class="container" style="border: outset;">
+<div class="col-lg-4 col-offset-6 centered" >
+
+  <div class="pt-4 pb-3">
+
+    <h5 class="text-center mt-1 mb-4">Sign Up</h5>
+
+
+    <form action="/register" method="POST">
+
+      <div class="form-row">
+        <div class="col">
+          <div class="md-form md-outline mt-0">
+            <label for="materialRegisterFormFirstName">First name</label>
+            <input type="text" id="materialRegisterFormFirstName" class="form-control" name="fname">
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="md-form md-outline mt-0">
+                 <label for="materialRegisterFormLastName">Last name</label>
+            <input type="text" id="materialRegisterFormLastName" class="form-control" name="lname">
+         
+          </div>
+        </div>
+      </div>
+
+          <label data-error="wrong" data-success="right" for="defaultForm-email2" class="pull-left"> Gender</label>
+          
+<div class="md-form md-outline mt-0"></div>
+        <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline1" class="custom-control-input" name="gender" value="Male">
+  <label class="custom-control-label" for="customRadioInline1" >Male</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2"  class="custom-control-input" name="gender" value="Female">
+  <label class="custom-control-label" for="customRadioInline2" >Female</label>
+</div>
+</div>
+
+        <label data-error="wrong" data-success="right" for="defaultForm-email2" class="pull-left"> Your email</label>
+      <div class="md-form md-outline mt-0">
+        <input type="email" id="defaultForm-email2" class="form-control" name="email">
+        
+      </div>
+      <div class="md-form md-outline mt-0">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass2">Your password</label>
+        <input type="password" id="defaultForm-pass2" class="form-control" name="psw">
+        
+        <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+          At least 8 characters and 1 digit
+        </small>
+      </div>
+
+      <div class="md-form md-outline">
+          <label for="materialRegisterFormPhone">Phone number</label>
+        <input type="number" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock" name="phone">
+        
+      </div>
+
+        <div class="md-form md-outline mb-2 mt-2">
+      <input type="Submit" class="btn btn-success" value="Register">
+        </div>
+    </form>
+
+  </div>
+
+</div>
+<!-- Card -->
+</div>
+</body>
+
+</html>
